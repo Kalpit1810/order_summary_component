@@ -1,0 +1,116 @@
+:root {
+    --red-hat-display: url(https://fonts.google.com/specimen/Red+Hat+Display);
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    font-weight: 500;
+    width: fit-content;
+    
+    margin: 50px auto; 
+}
+
+.card {
+    width: 450px;
+    background-color: white;
+    font-family: var(--red-hat-display);
+    color: var(--desaturated-blue);
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center ;   
+}
+
+.hero{
+    width: 100%;
+}
+
+.content {
+    padding: 40px;
+}
+
+.card h2 {
+    font-weight: 900;
+    font-size: 32px;
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.annual-plan {
+    background-color: var(--very-pale-blue);
+    padding: 25px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-text
+{
+    margin-right: 85px;
+}
+
+.annual-plan a{
+    color: var(--bright-blue);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.annual-plan a:hover{
+    opacity: 0.8;
+    text-decoration: none;
+}
+
+
+.annual-plan strong {
+    color: var(--dark-blue);
+}
+
+.card button {
+    width: 100%;
+    margin: 5px;
+    border: none;
+    padding: 1rem 0;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 12px;
+}
+
+
+
+.proceed_to_payment {
+    background-color: var(--bright-blue);
+    box-shadow: 0 20px 30px -8px rgb(197 189 245);
+    color: white;
+}
+
+.proceed_to_payment:hover {
+    opacity: 0.8;
+}
+
+.cancel_payment {
+    color: var(--desaturated-blue);
+}
+
+.cancel_payment:hover {
+    color: black;
+}
